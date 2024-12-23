@@ -1,0 +1,450 @@
+body {
+  background: #b82020;
+}
+.bg {
+  background-image: url("./final (2).webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100vw;
+  border-radius: 2rem;
+}
+
+.btn {
+  font-weight: 500;
+  color: rgba(201, 25, 25, 0.65);
+  padding: 2px;
+  border-radius: 5px;
+  transition: color 0.9s ease, transform 2s ease;
+}
+.btn:hover {
+  color: black;
+}
+.btn-li:hover {
+  transform: scale(1.1);
+}
+.nav {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem;
+  border-radius: 25px;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0;
+}
+.logo {
+  color: #ff9800;
+  font-size: larger;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: space-around;
+  /* font-family: "Oleo Script Swash Caps", system-ui; */
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.icon {
+  color: white;
+  background-color: rgba(201, 25, 25, 0.65);
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+.nav p {
+  font-size: 1.1rem;
+  text-wrap: nowrap;
+  font-family: "Oleo Script Swash Caps", system-ui;
+  color: rgba(201, 25, 25, 0.85);
+}
+
+/* Responsive Navigation Bar */
+@media (max-width: 768px) {
+  .bg{
+    background-color: #a80000;
+    background-image: none;
+  }
+  .nav {
+    flex-direction: column; /* Stack items vertically */
+    width: 50%; /* Full width */
+    padding: 1rem;
+  }
+
+  .nav ul {
+    flex-direction: column; /* Stack nav links vertically */
+    gap: 1rem;
+    width: 100%;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .logo-cont {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .icons {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem;
+  }
+}
+
+.icons {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo-cont {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+  align-items: center;
+  width: 20%;
+  justify-content: ce nter;
+}
+.hero-sec {
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: "Oleo Script Swash Caps", system-ui;
+  color: rgba(201, 25, 25, 0.85);
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.button {
+  background-color: #ff9800;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease;
+  width: 7rem;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+.deal-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Hides the overflow content */
+  background-color: #ff9800;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap; /* Ensures the text stays on one line */
+}
+
+.deal-track {
+  display: inline-block;
+  white-space: nowrap; /* Prevents line wrapping */
+  animation: scrollBanner 10s linear infinite; /* Smooth infinite animation */
+}
+
+@keyframes scrollBanner {
+  from {
+    transform: translateX(100%); /* Start outside the right edge */
+  }
+  to {
+    transform: translateX(-100%); /* End outside the left edge */
+  }
+}
+.cards {
+  background-color: rgb(216, 22, 22);
+  height: 15rem;
+  width: 325px;
+  margin: 1rem;
+  margin-top: 5rem;
+  padding: 1rem;
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+.cards:hover {
+  transform: scale(1.1);
+}
+.card-img {
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+.card-content p {
+  font-size: 0.8rem;
+  color: rgba(250, 244, 244, 0.7);
+  font-family: "Oleo Script Swash Caps", system-ui;
+}
+.card-content h3 {
+  font-family: "Oleo Script Swash Caps", system-ui;
+  font-size: 1.3rem;
+  color: white;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card-2 {
+  background-color: green;
+}
+.footer {
+  background: linear-gradient(45deg, #ff0000, #a80000);
+  color: #fff;
+  padding: 2rem 1.5rem;
+  font-family: "Oleo Script Swash Caps", system-ui, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  text-align: center;
+  flex: 1;
+}
+
+.footer-logo img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.footer-logo p {
+  font-size: 1rem;
+  color: #ffcccb;
+}
+
+.footer-links {
+  flex: 1;
+}
+
+.footer-links h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ffd700;
+}
+
+.footer-socials {
+  flex: 1;
+}
+
+.footer-socials h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.card-5 {
+  background-color: green;
+}
+#customer-reviews {
+  padding: 50px 20px;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#customer-reviews h2 {
+  font-family: "Oleo Script Swash Caps", system-ui;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffcc00; /* Dark Yellow */
+  background: rgba(0, 128, 0, 0.9);
+  border-radius: 2rem;
+}
+
+#customer-reviews p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #fff; /* White for contrast */
+  padding: 0.8rem;
+  font-family: sans-serif;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.review {
+  background: rgba(0, 128, 0, 0.9); /* Dark Green */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.review p {
+  font-size: 1rem;
+  font-style: italic;
+  color: #ffcc00; /* Dark Yellow */
+}
+
+.review h4 {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #ff4c4c; /* Dark Red */
+}
+
+.add-review-button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #cc0000; /* Dark Red */
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.add-review-button:hover {
+  background: #ff4c4c; /* Even Darker Red */
+  transform: scale(1.05);
+}
+/* Best Seller Section */
+#best-seller {
+  padding: 50px 20px;
+  background-color: #f5f5f5; /* Light gray background */
+  text-align: center;
+  border-radius: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+}
+
+.section-title {
+  font-family: "Oleo Script Swash Caps", system-ui;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #cc0000; /* Dark Red */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.best-seller-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.product-price {
+  color: #cc0000;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #e68900;
+  transform: scale(1.05);
+}
