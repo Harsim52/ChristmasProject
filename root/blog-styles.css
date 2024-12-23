@@ -1,3 +1,7 @@
+
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -167,4 +171,49 @@ nav a:hover {
   padding-top: 1rem;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.8);
+}
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    margin: 0 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-logo img {
+    width: 80px;
+  }
+
+  .footer-links h4,
+  .footer-socials h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .footer-logo img {
+    width: 70px;
+  }
+
+  .footer-links ul li {
+    margin-bottom: 0.3rem;
+  }
 }
